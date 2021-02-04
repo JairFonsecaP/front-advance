@@ -24,7 +24,7 @@ El backend está deplegado en https://back-crud-advance.herokuapp.com/ y en la r
 #### 2.3
 
 El frontend se realizó en React una interfaz que muestra la lista de empleados que hay en la base de datos las columnas que se muestran son documento, nombre, apellido, teléfono además de una columna con tres iconos, uno que muestra el status del empleado y al oprimirse cambia el status, otro que permite editar el usuario con un formulario que se muestra y un botón de borrar que genera una confirmación tipo modal de react con un botón de confirmar y uno para declinar la solicitud para que el usuario esté seguro de eliminar el registro. También se muestra un botón para crear un usuario nuevo que despliega un formulario con los campos nombre, apellido, genero(menú desplegable), email, dirección, teléfono, tipo de documento(menú desplegable) y documento de los cuales el único no obligatorio es la dirección. Este formulario es el mismo que el de editar usuario ya que se reutiliza.
-Este front se encuentra en este link de heroku también
+Este front se encuentra en este link de heroku también https://front-crud-advance.herokuapp.com/
 
 #### 2.4
 
