@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Prueba Jr. DevAdvance
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Se desarrollaron todas las pruebas planteadas en el documento "PruebaAdvance.pdf" de la siguiente manera:
 
-## Available Scripts
+### 1. Prueba Técnica:
 
-In the project directory, you can run:
+Las respuesta se encuentran en el archivo “prueba-tecnica.md” en este mismo repositorio.
 
-### `npm start`
+### 2. prueba práctica:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 2.1
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Los scripts de SQL, se encuentran en el backend que se encuentra en el repositorio ubicado en el siguiente enlace https://github.com/JairFonsecaP/back-advance en la diccionario 'database’ en el archivo ‘db.sql’ .
+Las tablas quedaron guardas remotamente en el enlace https://remotemysql.com/phpmyadmin/ se puede acceder con el user: wtlGBn7iaf
+Y el password: sd1gLl5UKt, están las 3 tablas creadas y relacionadas.
 
-### `npm test`
+Los dos registros que no se pueden eliminar es por que tienen otras tablas relacinadas entonces no deja eliminarlos.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 2.2
 
-### `npm run build`
+Se creó el backend en node.js, usando express con los cuatro endpoints solicitados, además se creó los endpoints “activate”, “deactivate” que activan y desactivan el status del employee, “activatemail” que activa al employee con el enlace que se envia al correo, adicionalmente se generó el end point “send” que primero valida el genero del employee para personalizar el correo y un método que genera un url personalizada para que cuando el empleado de click al botón que está en el correo que se le envía su status cambie y quede activo activado.
+El backend está deplegado en https://back-crud-advance.herokuapp.com/ y en la ruta https://back-crud-advance.herokuapp.com/api/employee/list, muestra todos los registros de la tabla Employee de la base de datos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 2.3
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+El frontend se realizó en React una interfaz que muestra la lista de empleados que hay en la base de datos las columnas que se muestran son documento, nombre, apellido, teléfono además de una columna con tres iconos, uno que muestra el status del empleado y al oprimirse cambia el status, otro que permite editar el usuario con un formulario que se muestra y un botón de borrar que genera una confirmación tipo modal de react con un botón de confirmar y uno para declinar la solicitud para que el usuario esté seguro de eliminar el registro. También se muestra un botón para crear un usuario nuevo que despliega un formulario con los campos nombre, apellido, genero(menú desplegable), email, dirección, teléfono, tipo de documento(menú desplegable) y documento de los cuales el único no obligatorio es la dirección. Este formulario es el mismo que el de editar usuario ya que se reutiliza.
+Este front se encuentra en este link de heroku también
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 2.4
 
-### `npm run eject`
+Se crea un mail en html siguiendo los requerimientos y el mockup “mail.png”, que cuando se envía y visto con mailspring se logra visualizar como el de la imagen “correoactivacion.png”.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### 2.5
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Cuando se crea un usuario nuevo desde la interfaz se envía el correo generado al mail ingresado por el usuario.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se adjunta feedback de la prueba en el archivo feedbak.md
